@@ -66,8 +66,8 @@ public void OnPluginStart() {
 
 	RegConsoleCmd("say", Command_Say);
 	RegConsoleCmd("say_team", Command_Say);
-	RegConsoleCmd("sm_hop", Command_Hop, "Hop servers.");
-	RegConsoleCmd("sm_servers", Command_Servers, "Hop servers.");
+	RegConsoleCmd("sm_hop", Command_Hop, "Switch connection.");
+	RegConsoleCmd("sm_servers", Command_Servers, "Switch connection.");
 
 	char path[MAX_STR_LEN];
 
@@ -219,7 +219,7 @@ public int MenuConfirmHandler(Menu menu, MenuAction action, int param1, int para
 		if (g_cvarBroadcastHops.BoolValue) {
 			char clientName[MAX_NAME_LENGTH];
 			GetClientName(param1, clientName, sizeof(clientName));
-			PrintToChatAll("\x01[\x03hop\x01] %t", "HopNotification", clientName, g_sServer[param1]);
+			PrintToChatAll("\x01[\x03serveme.tf\x01] %t", "HopNotification", clientName, g_sServer[param1]);
 		}
 	}
 	g_sAddress[param1][0] = '\0';

@@ -2,16 +2,16 @@
 {
 	"SelectServer"
 	{
-		"en"		"Select a server to join ..."
+		"en"		"Select a way to connect ..."
 	}
 	"AboutToJoinServer"
 	{
-		"en"		"About to join server ..."
+		"en"		"About to join server through ..."
 	}
 	"HopNotification"
 	{
 		"#format"	"{1:s},{2:s}"
-		"en"		"{1} has hopped to {2} !"
+		"en"		"{1} has switched to {2} !"
 	}
 	"Advert"
 	{
